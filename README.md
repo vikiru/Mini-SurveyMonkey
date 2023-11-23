@@ -30,7 +30,7 @@
 - [👥 Authors](#-authors)
 - [📑 Table of Contents](#-table-of-contents)
 - [🌟 Features](#-features)
-- [📋 Pre-requisites](#-pre-requisites)
+- [📋 Prerequisites](#-prerequisites)
 - [⚙️ Setup](#️-setup)
 - [🚀 Run Instructions](#-run-instructions)
 - [🔍 Testing](#-testing)
@@ -53,7 +53,7 @@
   - Results will be displayed as simple text, histogram, or a pie chart based on the question type
 - Survey results can be exported to a .pdf file
 
-## 📋 Pre-requisites
+## 📋 Prerequisites
 
 Ensure that the following dependencies are installed onto your machine.
 

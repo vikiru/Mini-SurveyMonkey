@@ -1,67 +1,112 @@
-# Mini-Survey Monkey [Group 5] [![CircleCI](https://circleci.com/gh/Imcool4789/Mini-SurveyMonkey/tree/master.svg?style=svg)](https://circleci.com/gh/Imcool4789/Mini-SurveyMonkey/tree/master)
+<h1 align="center">Mini-SurveyMonkey [Group 5] <a href="https://circleci.com/gh/Imcool4789/Mini-SurveyMonkey/tree/master"><img src="https://circleci.com/gh/Imcool4789/Mini-SurveyMonkey/tree/master.svg?style=svg"></a></h1>
 
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
-![Thymeleaf](https://img.shields.io/badge/Thymeleaf-%23005C0F.svg?style=for-the-badge&logo=Thymeleaf&logoColor=white)
-![CircleCI](https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white)
-![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+<p align="center">
+  <a href="https://spring.io/">
+    <img src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white" alt="Spring">
+  </a>
+  <a href="https://www.thymeleaf.org/">
+    <img src="https://img.shields.io/badge/Thymeleaf-%23005C0F.svg?style=for-the-badge&logo=Thymeleaf&logoColor=white" alt="Thymeleaf">
+  </a>
+  <a href="https://circleci.com/">
+    <img src="https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white" alt="CircleCI">
+  </a>
+  <a href="https://www.mongodb.com/">
+    <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+  </a>
+</p>
 
-## Project Description
+<p align="justify">
+ The Mini-SurveyMonkey Spring Boot application is a platform for creating and managing surveys. It supports a variety of question types such as multiple choice, number range, and open-ended, and allows surveyors to close surveys and retrieve responses at any time. Users can view and complete surveys, with their responses securely stored. The application generates outputs for each question in various formats based on the question type.
+</p>
 
-The Mini-SurveyMonkey Spring Boot application will allow a surveyor to create a survey with a list of questions that can be of varying types such as multiple choice, number range, and open ended. At any point in time, the surveyor will be able to close the survey and obtain the responses. The users will be able to view and fill out the survey created by the surveyor and allow their responses to be saved and upon successful submission, the survey will output the result of each question either as simple text, histogram, or pie chart depending on the type of question asked in the survey.
+## 📑 Table of Contents
 
-The repository is sorted into various packages such as `Login`, `Survey`, `Question`, `Answer` and these packages group together classes relevant to the specific package name. E.x. `Login` will contain model, repository and controller classes relevant to the act of logging into the app.
+- [📑 Table of Contents](#-table-of-contents)
+- [🌟 Features](#-features)
+- [📋 Pre-requisites](#-pre-requisites)
+- [⚙️ Setup](#️-setup)
+- [🚀 Run Instructions](#-run-instructions)
+- [🔍 Testing](#-testing)
+- [🔗 Relevant Links](#-relevant-links)
+- [👥 Authors](#-authors)
 
-## Relevant Links
+## 🌟 Features
 
-- [CircleCI](https://circleci.com/gh/Imcool4789/Mini-SurveyMonkey/tree/master)
-- [Heroku App Link](https://minisurveymonkey.herokuapp.com/)
+- The ability to login and navigate as a `surveyor` or a `user`
+- A `surveyor` can:
+  - Create surveys with questions of various types such as multiple choice, number range, and open-ended
+  - Add new questions to an existing survey
+  - Delete individual questions within an existing survey
+  - Close surveys at any time and view results instantaneously
+  - Can switch between `user` and `surveyor` view at any time
+- A `user` can:
+  - Answer questions within a survey
+  - View their progress throughout the survey via the progress bar shown at the bottom of the page
+  - View the result of a survey upon completion
+- Results can be viewed as a whole spanning the entire survey and each question separately
+  - Results will be displayed as simple text, histogram, or a pie chart based on the question type
+- Survey results can be exported to a .pdf file
+
+## 📋 Pre-requisites
+
+Ensure that the following dependencies are installed onto your machine by following the [Setup Instructions](#⚙️-setup).
+
+- [Java](https://www.java.com/en/download/manual.jsp)
+- [Maven](https://maven.apache.org/download.cgi)
+
+## ⚙️ Setup
+
+1. Clone this repository to your local machine.
+
+```bash
+git clone https://github.com/vikiru/Mini-SurveyMonkey.git
+cd Mini-SurveyMonkey
+```
+
+2. Download and install all dependencies.
+
+```bash
+mvn install
+```
+
+## 🚀 Run Instructions
+
+1. Clean and package the project.
+
+```bash
+mvn clean package
+```
+
+2. Run the main program.
+
+```bash
+java -jar ./target/Mini-SurveyMonkey-0.0.1-SNAPSHOT.jar
+```
+
+## 🔍 Testing
+
+Run the following command to execute all of the tests:
+
+```bash
+mvn test
+```
+
+## 🔗 Relevant Links
+
+- [CircleCI Pipeline](https://circleci.com/gh/Imcool4789/Mini-SurveyMonkey/tree/master)
 - [Kanban Project Board](https://github.com/Imcool4789/Mini-SurveyMonkey/projects/1)
-- [Wiki](https://github.com/Imcool4789/Mini-SurveyMonkey/wiki)
+- [Project Wiki](https://github.com/Imcool4789/Mini-SurveyMonkey/wiki)
 
-## Authors
+<h2>📊 Diagrams</h2>
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/56265739/162431989-f7d0e994-a048-4459-9915-1956ad734a3d.png" alt="Database Diagram">
+    <p align="center">  Fig. 1 Database Diagram</p>
+    <img src="https://github.com/Imcool4789/Mini-SurveyMonkey/blob/master/diagrams/Group5_Class_UML_Vis_Kirubakaran.png" alt="UML Class Diagram">
+    <p align="center"> Fig. 2 UML Class Diagram</p>
+</p>
+
+## 👥 Authors
 
 - John Warde
 - Kashish Saxena
 - Vis Kirubakaran
-
-## Milestone 3 - Apr 8, 2022
-- [x] [Working on Results Page](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/10)
-- [x] [Result Page Templates of all types](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/45)
-- [x] [Multiple Question Creation Same Page through Redirects](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/46)
-- [x] [User POV](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/49)
-- [x] [Close Survey Functionality](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/59)
-- [x] [Integrating Database](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/67)
-- [x] [Update Wiki for M3](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/74)
-- [x] [Fix HTML Stylesheet Reference](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/76)
-- [x] [Refactor Model Inheritance and Multiplicity](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/77)
-- [x] [Update viewSurvey CSS](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/78)
-- [x] [Progress Bar](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/80)
-- [x] [Update README](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/81)
-- [x] [Update Diagrams and add generated ER Diagram](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/82)
-- [x] [Spring Security](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/84)
-- [x] [Refactor Model Tests](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/87)
-- [x] [Unit and Integration Testing](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/88)
-- [x] [Weekly Scrum Apr 4th](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/90)
-- [x] [Save Results page as pdf](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/92)
-- [x] [Refactor View Mappings after Spring Security](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/94)
-- [x] [Refactor repository interaction with models](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/93)
-- [x] [Single Results Page & Multiple Results Page](https://github.com/Imcool4789/Mini-SurveyMonkey/issues/95)
-
-## Wiki
-To see the milestone-by-milestone progress of the project, please take a look at the [Wiki](https://github.com/Imcool4789/Mini-SurveyMonkey/wiki).
-
-## Diagrams
-
-### DB Diagram
-![image](https://user-images.githubusercontent.com/56265739/162431989-f7d0e994-a048-4459-9915-1956ad734a3d.png)
-
-### UML Class Diagram
-![image](https://github.com/Imcool4789/Mini-SurveyMonkey/blob/master/diagrams/Group5_Class_UML_Vis_Kirubakaran.png)
-
-
-## Setup & Testing Instructions
-1.  `git clone` this repository to your local machine
-2.  Open IntelliJ, run the following lifecycles with Maven: `clean` followed by `package`
-3.  To run the application, right click the `Mini-SurveyMonkey-0.0.1-SNAPSHOT.jar` which is located in `target/` and select `Run`
-4.  To run all the tests, run the following lifecycle with Maven: `test`

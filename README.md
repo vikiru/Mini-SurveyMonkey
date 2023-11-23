@@ -19,8 +19,15 @@
  The Mini-SurveyMonkey Spring Boot application is a platform for creating and managing surveys. It supports a variety of question types such as multiple choice, number range, and open-ended, and allows surveyors to close surveys and retrieve responses at any time. Users can view and complete surveys, with their responses securely stored. The application generates outputs for each question in various formats based on the question type.
 </p>
 
+## 👥 Authors
+
+- John Warde
+- Kashish Saxena
+- Vis Kirubakaran
+
 ## 📑 Table of Contents
 
+- [👥 Authors](#-authors)
 - [📑 Table of Contents](#-table-of-contents)
 - [🌟 Features](#-features)
 - [📋 Pre-requisites](#-pre-requisites)
@@ -28,7 +35,6 @@
 - [🚀 Run Instructions](#-run-instructions)
 - [🔍 Testing](#-testing)
 - [🔗 Relevant Links](#-relevant-links)
-- [👥 Authors](#-authors)
 
 ## 🌟 Features
 
@@ -49,7 +55,7 @@
 
 ## 📋 Pre-requisites
 
-Ensure that the following dependencies are installed onto your machine by following the [Setup Instructions](#⚙️-setup).
+Ensure that the following dependencies are installed onto your machine.
 
 - [Java](https://www.java.com/en/download/manual.jsp)
 - [Maven](https://maven.apache.org/download.cgi)
@@ -58,30 +64,30 @@ Ensure that the following dependencies are installed onto your machine by follow
 
 1. Clone this repository to your local machine.
 
-```bash
-git clone https://github.com/vikiru/Mini-SurveyMonkey.git
-cd Mini-SurveyMonkey
-```
+   ```bash
+   git clone https://github.com/vikiru/Mini-SurveyMonkey.git
+   cd Mini-SurveyMonkey
+   ```
 
 2. Download and install all dependencies.
 
-```bash
-mvn install
-```
+   ```bash
+   mvn install
+   ```
 
 ## 🚀 Run Instructions
 
 1. Clean and package the project.
 
-```bash
-mvn clean package
-```
+   ```bash
+   mvn clean package
+   ```
 
 2. Run the main program.
 
-```bash
-java -jar ./target/Mini-SurveyMonkey-0.0.1-SNAPSHOT.jar
-```
+   ```bash
+   java -jar ./target/Mini-SurveyMonkey-0.0.1-SNAPSHOT.jar
+   ```
 
 ## 🔍 Testing
 
@@ -104,9 +110,3 @@ mvn test
     <img src="./diagrams/Group5_Class_UML_Vis_Kirubakaran.png" alt="UML Class Diagram">
     <p align="center"> Fig. 2 UML Class Diagram</p>
 </p>
-
-## 👥 Authors
-
-- John Warde
-- Kashish Saxena
-- Vis Kirubakaran

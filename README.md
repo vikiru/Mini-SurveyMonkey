@@ -99,9 +99,9 @@ mvn test
 
 <h2>📊 Diagrams</h2>
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/56265739/162431989-f7d0e994-a048-4459-9915-1956ad734a3d.png" alt="Database Diagram">
+    <img src="./diagrams/Group5_DB_Diagram_John_Warde.png" alt="Database Diagram">
     <p align="center">  Fig. 1 Database Diagram</p>
-    <img src="https://github.com/Imcool4789/Mini-SurveyMonkey/blob/master/diagrams/Group5_Class_UML_Vis_Kirubakaran.png" alt="UML Class Diagram">
+    <img src="./diagrams/Group5_Class_UML_Vis_Kirubakaran.png" alt="UML Class Diagram">
     <p align="center"> Fig. 2 UML Class Diagram</p>
 </p>
 

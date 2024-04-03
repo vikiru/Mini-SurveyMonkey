@@ -64,30 +64,30 @@ Ensure that the following dependencies are installed onto your machine.
 
 1. Clone this repository to your local machine.
 
-   ```bash
-   git clone https://github.com/vikiru/Mini-SurveyMonkey.git
-   cd Mini-SurveyMonkey
-   ```
+  ```bash
+  git clone https://github.com/vikiru/Mini-SurveyMonkey.git
+  cd Mini-SurveyMonkey
+  ```
 
 2. Download and install all dependencies.
 
-   ```bash
-   mvn install
-   ```
+  ```bash
+  mvn install
+  ```
 
 ## 🚀 Run Instructions
 
 1. Clean and package the project.
 
-   ```bash
-   mvn clean package
-   ```
+  ```bash
+  mvn clean package
+  ```
 
 2. Run the main program.
 
-   ```bash
-   java -jar ./target/Mini-SurveyMonkey-0.0.1-SNAPSHOT.jar
-   ```
+  ```bash
+  java -jar ./target/Mini-SurveyMonkey-0.0.1-SNAPSHOT.jar
+  ```
 
 ## 🔍 Testing
 
